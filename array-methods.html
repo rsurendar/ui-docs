@@ -28,5 +28,32 @@
       
       <a href="https://github.com/zloirock/core-js#relative-indexing-method">more info core-js</a>
   </section>
+    <code>
+      class ArrayMedthodAt
+{
+  /**
+  * A function which retrun the last item of a given array
+  **/
+
+  lastItem(arr:any):string
+  {
+    return arr.at(-1) ?? ''; 
+  }
+
+  lastItemForTyped(arr:Array<any>):string
+  {
+    return arr.pop() ?? ''; 
+  }
+}
+
+	const arrayMedthodAt = new ArrayMedthodAt();
+	const cart: string[] = ['apple', 'banana', 'pear'];
+  console.log(arrayMedthodAt.lastItem(cart));
+
+  const num: Number[] = [1, 2, 3];
+  console.log(arrayMedthodAt.lastItem(num));
+
+    console.log("[]", arrayMedthodAt.lastItem([]));
+    </code>
 </body>
 </html>
