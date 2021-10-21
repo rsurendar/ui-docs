@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1>Array Medthods</h1>
+  <h4>at()</h4>
+  <section>
+    <span>The at() methos takes an interger value and retruns the item at that index, allowing for positive and negative integers.</span>
+    <span><strong>Negative integers count back from the last item in the array.</strong></span>
+    <section>
+      <p>This is not to suggest there is anything wrong with using the square bracket notation.</p>
+      <span>For example array[0] would return the first item. However instead of using array.length of latter items; e.g. array[array.length-1] for the last item,</span>
+      <span><h2>you can call array.at(-1)</h2>
+    </section>
+      
+      <code> 
+       const arrayOfvalues = [5,12,8,130,44];
+      let index =2;
+        console.log(`Using an index of ${index} the item returned is ${array1.at(index)}`);
+      // expected output: "Using an index of 2 the item returned is 8"
+
+      index = -2;
+
+      console.log(`Using an index of ${index} item returned is ${array1.at(index)}`);
+      // expected output: "Using an index of -2 item returned is 130"
+      </code>
+      
+      <a href="https://github.com/zloirock/core-js#relative-indexing-method">more info core-js</a>
+  </section>
+</body>
+</html>
